@@ -1,0 +1,4 @@
+FROM  openjdk17:latest
+  ADD ./
+  COPY .target
+  CMD ["java","-jar","app.jar"]
