@@ -2,3 +2,17 @@ FROM  openjdk17:latest
   ADD ./
   COPY .target
   CMD ["java","-jar","app.jar"]
+# Use official OpenJDK image as base image
+FROM openjdk:17-jdk-slim
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy the jar file from your local machine into the container
+COPY target/myapp.jar /app/myapp.jar
+
+# Expose port (same as your application port)
+EXPOSE 8080
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "myapp.jar"]
