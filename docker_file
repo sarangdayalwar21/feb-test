@@ -2,4 +2,4 @@ FROM  openjdk17:latest
   ADD ./
   COPY .target
   CMD ["java","-jar","app.jar"]
- 
+ https://github.com/sumeetverma07/simple-java-maven-app-may-24.git
