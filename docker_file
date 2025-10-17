@@ -2,5 +2,3 @@ FROM  openjdk17:latest
   ADD ./
   COPY .target
   CMD ["java","-jar","app.jar"]
-
-https://github.com/jenkins-docs/simple-java-maven-app.git
