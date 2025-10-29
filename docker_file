@@ -4,25 +4,3 @@ FROM  openjdk17:latest
   CMD ["java","-jar","app.jar"]
 
 
-Started by user sarang dayalwar
-Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/maven-java
-The recommended git tool is: NONE
-No credentials specified
- > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/maven-java/.git # timeout=10
-Fetching changes from the remote Git repository
- > git config remote.origin.url https://github.com/sarangdayalwar21/simple-java-maven-app-may-24.git # timeout=10
-Fetching upstream changes from https://github.com/sarangdayalwar21/simple-java-maven-app-may-24.git
- > git --version # timeout=10
- > git --version # 'git version 2.34.1'
- > git fetch --tags --force --progress -- https://github.com/sarangdayalwar21/simple-java-maven-app-may-24.git +refs/heads/*:refs/remotes/origin/* # timeout=10
- > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
-Checking out Revision 8cc329c5a55ca53587f97883f0bee0d880926ec3 (refs/remotes/origin/master)
- > git config core.sparsecheckout # timeout=10
- > git checkout -f 8cc329c5a55ca53587f97883f0bee0d880926ec3 # timeout=10
-Commit message: "Update Dockerfile"
- > git rev-list --no-walk 8cc329c5a55ca53587f97883f0bee0d880926ec3 # timeout=10
-FATAL: Couldn’t find any executable in null
-Build step 'Invoke top-level Maven targets' marked build as failure
-Sending e-mails to: sarangdayalwar21@gmail.com
-Finished: FAILURE
