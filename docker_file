@@ -4,3 +4,56 @@ FROM  openjdk17:latest
   CMD ["java","-jar","app.jar"]
 
 
+Started by user sarang dayalwar
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/maven-java
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/maven-java/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sarangdayalwar21/simple-java-maven-app-may-24.git # timeout=10
+Fetching upstream changes from https://github.com/sarangdayalwar21/simple-java-maven-app-may-24.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+ > git fetch --tags --force --progress -- https://github.com/sarangdayalwar21/simple-java-maven-app-may-24.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 8cc329c5a55ca53587f97883f0bee0d880926ec3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8cc329c5a55ca53587f97883f0bee0d880926ec3 # timeout=10
+Commit message: "Update Dockerfile"
+ > git rev-list --no-walk 8cc329c5a55ca53587f97883f0bee0d880926ec3 # timeout=10
+[maven-java] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/mvn/bin/mvn clean compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.example:simple-java-maven-app >------------------
+[INFO] Building simple-java-maven-app 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ simple-java-maven-app ---
+[INFO] Deleting /var/lib/jenkins/workspace/maven-java/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ simple-java-maven-app ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/maven-java/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ simple-java-maven-app ---
+[INFO] Changes detected - recompiling the module! :source
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file with javac [debug release 21] to target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.642 s
+[INFO] Finished at: 2025-10-29T20:35:05+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project simple-java-maven-app: Fatal error compiling: error: release version 21 not supported -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Sending e-mails to: sarangdayalwar21@gmail.com
+Finished: FAILURE
