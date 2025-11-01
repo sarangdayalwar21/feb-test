@@ -53,3 +53,16 @@ FROM  openjdk17:latest
         </plugins>
     </build>
 </project>
+
+
+
+
+
+
+
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello from Linux! Application running successfully!");
+        System.out.println("तुमचा Java application आता काम करेल!");
+    }
+}
