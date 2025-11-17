@@ -66,3 +66,8 @@ public class App {
         System.out.println("तुमचा Java application आता काम करेल!");
     }
 }
+
+
+docker pull nginx:trixie-perl
+
+
